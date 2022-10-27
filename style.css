@@ -1,0 +1,109 @@
+body
+{
+    background-color: hsl(30, 38%, 92%);
+    margin: auto;
+    padding-top: 50px;
+}
+
+#main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Bloc Image */
+
+#photo img
+{
+    max-width: 300px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+/* Bloc produit */
+
+#produit
+{
+    background-color: white;
+    max-width: 260px;
+    max-height: 430px;
+    border-radius: 0px 15px 15px 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    color: hsl(212, 21%, 14%);
+}
+
+h2
+{
+    text-transform:uppercase;
+}
+
+p, .small_price, h2, a
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.price
+{
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.small_price
+{
+    font-size: 1em;
+    text-decoration:line-through;
+}
+
+#cta
+{
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 15px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+}
+
+a
+{
+    display: block;
+    height: 40px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding-top: 2px;
+}
+
+#cta:hover
+{
+    background-color: hsl(157, 35%, 21%);
+}
+
+svg
+{
+    margin-right: 5px;
+}
+
+/* Responsive */
+
+@media all and (max-width: 619px) {
+    #photo img {
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: -5px;
+    }
+
+    #produit
+    {
+        border-radius: 0px 0px 15px 15px;
+    }
+}
